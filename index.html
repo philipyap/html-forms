@@ -7,11 +7,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>HTML-Forms</h1>
-    // action is where the information go
-    <form action="results.html" method="get"></form>  // get information from you and put it to database
-    <form action="" method="post"></form> // post something
+    <h1></h1>
+    
+    <form action="results.html" method="get" enctype="multipart/form-data">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
 
+        <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+            <input type= "number" name="age" id= "age" min= "1" max ="100" required>
+        </div>
+
+        <div>
+            <h2>Favourite Food</h2>
+            <label for="bananas">Bananas</label>
+            <input type="checkbox" name= "bananas" id= "bananas">
+
+            <label for="apples">Apples</label>
+            <input type="checkbox" name="apples" id="apples">
+        </div>
+
+        <div>
+            <label for="file">File</label>
+            <input type="file" name="file" id="file">
+        </div>
+
+        <div>
+            <button type="submit">Submit Info</button>
+        </div>
+        
+    </form>  
+    
     <script src="./app.js"></script>
 </body>
 </html>
